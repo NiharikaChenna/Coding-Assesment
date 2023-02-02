@@ -3,7 +3,7 @@ import Dropdown from './Dropdown';
 
 import { Link } from 'react-router-dom';
 
-const Dashboard = ({ items, level }) => {
+const Dashboard = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
 
   let ref = useRef();
@@ -55,14 +55,14 @@ const Dashboard = ({ items, level }) => {
             aria-expanded={dropdown ? 'true' : 'false'}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {window.innerWidth < 960 && level === 0 ? (
+            {window.innerWidth < 960 && depthLevel === 0 ? (
               items.title
             ) : (
               <Link to={items.url}>{items.title}</Link>
             )}
 
-            {level > 0 &&
-            window.innerWidth < 960 ? null : level > 0 &&
+            {depthLevel > 0 &&
+            window.innerWidth < 960 ? null : depthLevel > 0 &&
               window.innerWidth > 960 ? (
               <span>&raquo;</span>
             ) : (
@@ -70,7 +70,7 @@ const Dashboard = ({ items, level }) => {
             )}
           </button>
           <Dropdown
-            level={level}
+            depthLevel={depthLevel}
             subcategory={items.subcategory}
             dropdown={dropdown}
           />
@@ -84,14 +84,14 @@ const Dashboard = ({ items, level }) => {
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title}{' '}
-            {level > 0 ? (
+            {depthLevel > 0 ? (
               <span>&raquo;</span>
             ) : (
               <span className="arrow" />
             )}
           </button>
           <Dropdown
-            level={level}
+            depthLevel={depthLevel}
             subcategory={items.subcategory}
             dropdown={dropdown}
           />

@@ -31,7 +31,6 @@ const SearchBar = () => {
     }
 
     return (
-       <div className="srch">
            <div className="autocomplete" ref={searchbarRef}>
             <input style={{width:'20rem',height:'2rem',marginLeft:'2.5rem'}}
                 value={value}
@@ -50,7 +49,6 @@ const SearchBar = () => {
             )}
 
         </div>
-       </div>
     )
 };
 

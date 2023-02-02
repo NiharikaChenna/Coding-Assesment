@@ -1,8 +1,8 @@
 import Dashboard from './Dashboard';
-const Dropdown = ({ subcategory, dropdown, level }) => {
-  level = level + 1;
-  console.log(level)
-  const dropdownClass = level > 1 ? 'dropdown-subcategory' : '';
+const Dropdown = ({ subcategory, dropdown, depthLevel }) => {
+  depthLevel = depthLevel + 1;
+  console.log(depthLevel)
+  const dropdownClass = depthLevel > 1 ? 'dropdown-subcategory' : '';
   return (
     <ul
       className={`dropdown ${dropdownClass} ${
@@ -13,7 +13,7 @@ const Dropdown = ({ subcategory, dropdown, level }) => {
         <Dashboard
           items={subcategory}
           key={index}
-          level={level}
+          depthLevel={depthLevel}
         />
       ))}
     </ul>

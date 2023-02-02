@@ -1,0 +1,82 @@
+
+
+export const collections=[
+    {
+        title:'home',
+        url:'/'
+    },
+    {
+        title:'fashion',
+        url:'fashion',
+        subcategory:[
+           {
+            title:'mensWear',
+            url:'mens-collection',
+            subcategory:[
+                {
+                 title:'shirts',
+                 url:'shirts' 
+                },
+                {
+                    title:'bottomwear',
+                    url:'Bottom-wear'
+                },
+                {
+                    title:'tshirt',
+                    url:'tshirts'
+                },
+            ]
+
+           },
+           {
+            title:'Womenswear',
+            url:'womens-collection',
+            subcategory:[
+                {
+                    title:'western',
+                    url:'western'
+                },
+                {
+                    title:'sarees',
+                    url:'sarees'
+                },
+                {
+                    title:'kurtas',
+                    url:'kurtas'
+                }
+            ]
+           },
+           {
+            title:'accessories',
+            url:'accessories'
+           },
+           {
+            title:'kidswear',
+            url:'kids-collections'
+           }
+        ]
+    },
+    {
+        title:'contact',
+        url:'contact'
+    }
+]
+
+export const products=[
+    "menswear",
+    "womenswear",
+    "kidswear",
+    "shirts",
+    "pants",
+    "lehengas",
+    "tshirts",
+    "accessories",
+    "footwear",
+    "sandals",
+    "heels",
+    "watches",
+    "headphones",
+    "rings",
+    "kurtis",
+    "suits"
+]

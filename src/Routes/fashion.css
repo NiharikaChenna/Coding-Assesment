@@ -1,0 +1,69 @@
+.cont1{
+    width:22rem;
+    margin-top: 2rem;
+    box-shadow: black;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+span{
+    color:red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sub-container{
+    /* border:2px solid red; */
+    width:25rem;
+    padding-top: 4rem;
+    margin-left: 1rem;
+}
+.parent-cont{
+    background-image: url("../Assests/shopping-girl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:50rem;
+    margin-top: -2rem;
+}
+.quote span{
+    color:darkmagenta;
+    font-weight: 100;
+    font-size: 4rem;
+}
+.para{
+    color:red;
+    font-size: 1.3rem;
+}
+.name{
+    text-align: center;
+    margin-top: 2rem;
+}
+.user{
+    width:20rem;
+    height:3rem;
+    margin-top: 2rem;
+}
+.form{
+    background-color: whitesmoke;
+    padding-left:25rem;
+    display: flex;
+    flex-direction: column;
+    height:30rem;
+}
+.btn{
+    width:10rem;
+    height:3rem;
+    margin-top: 2rem;
+    margin-left:4.3rem ;
+    background-color:aliceblue;
+    border: none;
+}
+.btn:hover{
+    background-color: black;
+    color:white;
+}
+.mid{
+    margin-left:3rem;
+    margin-top: 1rem;
+}
